@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root
+{
+    --blue: #3195C9;
+    --white: #FFFFFF;
+    --pink: #F389B9;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-image: url(../images/wallpaper.jpg);
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header
+{
+    background-color: var(--blue);
+    min-height: 60px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px 3px #00000070;
+}
+
+header > .container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container > .logo
+{
+    color: var(--white);
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    transition: all 1s;
+}
+
+header > .container > .logo:hover
+{
+    text-decoration: underline var(--pink);
+}
+
+header > .container > nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+header > .container > nav > .icon
+{
+    color: var(--white);
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+header > .container > nav > .icon:hover
+{
+    transform: translateY(4px);
+    color: var(--pink);
+}
+
+main > .home
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+}
+
+main > .home > .title
+{
+    background-color: #00000040;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+    width: 100%;
+    font-size: 2.5em;
+    font-family: 'Righteous', cursive;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    padding: 24px;
+}
+
+main > .home > .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 120px;
+    width: 100%;
+}
+
+main > .home > .container > ul
+{
+    background-color: #00000040;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 120px;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+main > .home > .container > ul > li
+{
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 8px;
+}
+
+
+main > .store
+{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    padding: 48px 16px;
+}
+
+main > .store > div
+{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 16px 4px #00000070;
+    padding: 16px;
+}
+
+main > .store > div > .image
+{
+    vertical-align: middle;
+    height: 240px;
+    width: 240px;
+    padding: 8px;
+}
+
+main > .store > div > .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 240px;
+    padding: 8px;
+}
+
+main > .store > div > .container > .title
+{
+    background-image: linear-gradient(165deg, var(--blue), var(--pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+main > .store > div > .container > .paragraph
+{
+    text-align: justify;
+}
+
+main > .store > div > .container > .button
+{
+    color: var(--pink);
+    outline: 1px solid var(--pink);
+    font-size: 1.1em;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    border-radius: 16px;
+    padding: 8px;
+    transition: all 0.5s;
+}
+
+main > .store > div > .container > .button:hover
+{
+    color: var(--white);
+    background-color: var(--pink);
+    border-radius: 4px;
+}
+
+main > .contact
+{
+    min-height: 200px;
+    padding: 48px 16px;
+}
+
+main > .madeBy 
+{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+main > .madeBy > .logo
+{
+    background-color: var(--white);
+    width: 240px;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    min-height: 120px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px 3px #00000070;
+}
+
+footer > .menu
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 16px 0px;
+}
+
+footer > .menu > li > .link
+{
+    color: var(--white);
+    font-size: 1.1em;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+footer > .menu > li > .link:hover
+{
+    opacity: 1;
+    letter-spacing: 1px;
+    text-decoration: overline var(--pink);
+}
+
+footer > .paragraph
+{
+    color: var(--white);
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+footer > .paragraph > .link
+{
+    color: var(--white);
+    font-size: 1em;
+    text-decoration: underline wavy var(--pink);
+    transition: all 1s;
+}
+
+footer > .paragraph > .link:hover
+{
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 600px)
+{
+    main > .store > div
+    {
+        flex-direction: row;
+    }
+
+    main > .store > div > .container
+    {
+        height: 240px;
+    }
+    main > .home > .container
+    {
+        flex-direction: row;
+    }
+}
