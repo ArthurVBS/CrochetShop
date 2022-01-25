@@ -93,7 +93,6 @@ main > .home
     background-color: #00000040;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 
     display: grid;
@@ -136,27 +135,25 @@ main > .home > p > .icon
 
 main > .store
 {
-    background-image: linear-gradient(165deg, var(--blue), var(--pink));
+    background-color: #EAEDED;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 24px;
-    border-radius: 25px;
-    margin: 16px;
-    padding: 48px 16px;
+    align-items: stretch;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
 }
 
 main > .store > div
 {
     background-color: var(--white);
     display: flex;
+    flex-grow: 2;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
-    box-shadow: 8px 8px 16px 4px #00000070;
+    border-radius: 5px;
     gap: 16px;
     padding: 16px;
 }
@@ -167,6 +164,8 @@ main > .store > div > .title
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    width: 100%;
+    max-width: 300px;
     font-size: 1.5em;
     text-align: center;
     padding: 8px;
@@ -175,8 +174,8 @@ main > .store > div > .title
 main > .store > div > .image
 {
     vertical-align: middle;
-    height: 220px;
-    width: 220px;
+    height: 240px;
+    width: 240px;
     padding: 8px;
 }
 
@@ -186,6 +185,7 @@ main > .store > div > .container
     grid-template-rows: 1fr 1fr 2fr;
     gap: 16px;
     width: 100%;
+    max-width: 300px;
     padding: 8px;
 }
 
@@ -240,34 +240,13 @@ main > .store > div > .container > .button:hover
     border-radius: 4px;
 }
 
-main > .contact
-{
-    background-image: url(../images/background.jpg);
-    background-color: var(--white);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    min-height: 200px;
-    padding: 16px;
-}
-
-main > .contact > .container
-{
-    background-color: #00000040;
-    border-radius: 5px;
-    min-height: 200px;
-    padding: 16px;
-}
-
 main > .madeBy 
 {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: stretch;
     justify-content: center;
     max-width: 1100px;
     margin: 0 auto;
@@ -313,12 +292,17 @@ main > .madeBy > div > .container > .title
     padding: 8px;
 }
 
-main > .madeBy > div > .container > .paragraph
+main > .madeBy > div > .container > div
+{
+    padding: 8px;
+}
+
+main > .madeBy > div > .container > div > .paragraph
 {
     text-align: justify;
     text-indent: 32px;
+    font-size: 0.95em;
     opacity: 0.9;
-    padding: 8px;
 }
 
 main > .madeBy > div > .container > .icon
@@ -343,6 +327,68 @@ main > .madeBy > div > .container > .icon > a:hover
 {
     color: var(--pink);
     transform: translateY(-8px);
+}
+
+main > .contact
+{
+    background-image: url(../images/background.jpg);
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: grid;
+
+    gap: 16px;
+    padding: 16px;
+}
+
+main > .contact > .container
+{
+    background-color: #00000070;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    border-radius: 5px;
+    gap: 16px;
+    padding: 16px;
+}
+
+main > .contact > .container > .title
+{
+    color: var(--white);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+main > .contact > .container > .link
+{
+    background-color: #00000070;
+    color: var(--white);
+    text-align: center;
+    align-self: center;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #000000CC;
+    padding: 8px 16px;
+    transition: all 0.5s;
+}
+
+main > .contact > .container > .link > i
+{
+    padding: 8px;
+}
+
+main > .contact > .container > .link:hover
+{
+    box-shadow: 2px 2px 2px black;
+    transform: translate(-2px, -2px);
 }
 
 footer
@@ -421,12 +467,6 @@ footer > .paragraph > .link:hover
         grid-row: 1/5;
     }
 
-    main > .store > div > .image
-    {
-        height: 300px;
-        width: 300px;
-    }
-
     main > .madeBy > div
     {
         grid-template-columns: repeat(2, 1fr);
@@ -447,5 +487,10 @@ footer > .paragraph > .link:hover
     main > .madeBy > div:nth-child(2n) > .picture
     {
         order: 2;
+    }
+
+    main > .contact
+    {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
