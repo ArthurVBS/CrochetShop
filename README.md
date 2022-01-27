@@ -1,5 +1,5 @@
 <h1 align="center">Loja de Crochê</h1>
-<p align="center">Um site vitrine que mostra os produtos e conecta ao(à) vendedor(a)... 💻💳👩🏽</p>
+<p align="center">Um site vitrine que mostra os produtos e conecta ao(à) vendedor(a)... 💻💳🧶</p>
 
 <br>
 <div align="center">
@@ -17,7 +17,7 @@
 
 ## 💻 Situação do projeto:
 
-- Projeto em andamento... 🚧🧭
+- Projeto finalizado ✔️
 
 ## 🛠 Tecnologias:
 
@@ -28,8 +28,10 @@
 ## 📝 Features:
 
 - [x] Ser responsivo (CSS)
+- [x] Possuir um header dinâmico (JavaScript)
 - [x] Usar tags semânticas (HTML)
 - [x] Implementar conceitos de FlexBox (CSS)
+- [x] Implementar conceitos de Grid (CSS)
 - [x] Utilizar Cards (CSS)
 
 ## ⚙️ Pré-requisitos:
